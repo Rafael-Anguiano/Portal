@@ -10,6 +10,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Canvas
         dpr={[1, 2]}
       >
+        <color attach="background" args={['#030202']} />
         <OrbitControls enableDamping />
         <Experience />
     </Canvas>
