@@ -1,4 +1,4 @@
-import { useTexture, useGLTF, Center } from "@react-three/drei"
+import { useTexture, useGLTF, Center, Sparkles } from "@react-three/drei"
 import { useEffect } from "react"
 import * as THREE from "three"
 
@@ -40,6 +40,14 @@ const Experience = () => {
         scale={ nodes.portalLight.scale }
       >
       </mesh>
+
+      <Sparkles 
+        size={ 3 }
+        scale={ [ 3.5, 1, 3.5] }
+        position-y={1}
+        speed={ 0.8 }
+        count={ 20 }
+      />
     </Center>
   </>
 }
