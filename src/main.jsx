@@ -8,6 +8,7 @@ import { OrbitControls } from '@react-three/drei'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Canvas
+        flat
         dpr={[1, 2]}
       >
         <color attach="background" args={['#030202']} />
