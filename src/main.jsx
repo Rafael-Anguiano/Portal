@@ -10,9 +10,18 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Canvas
         flat
         dpr={[1, 2]}
+        camera={ {
+          fov: 45,
+          near: 0.1,
+          far: 2000,
+          position: [ 4, 0.5, 4 ]
+      } }
       >
         <color attach="background" args={['#030202']} />
-        <OrbitControls enableDamping />
+        <OrbitControls
+          enableDamping
+          maxPolarAngle={Math.PI / 2}
+        />
         <Experience />
     </Canvas>
   </React.StrictMode>,
